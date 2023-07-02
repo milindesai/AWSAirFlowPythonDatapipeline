@@ -37,7 +37,7 @@ def save_to_s3(data, **kwargs):
     import boto3
     execution_date = kwargs['execution_date']
     s3 = boto3.client('s3')
-    bucket_name = 'your-s3-bucket-name'
+    bucket_name = 'replace_with-real-s3-bucket-name'
     execution_date = datetime.strptime(execution_date, "%Y-%m-%dT%H:%M:%S.%f%z")
 
     timestamp = execution_date.strftime("%Y%m%d-%H%M%S")
